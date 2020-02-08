@@ -1,0 +1,17 @@
+module adder(a,b,control,result,carry,zf,of);
+	input [3:0] a,b;
+	input control;
+	output reg [3:0] result;
+	output reg carry,zf,of;
+	always @ (*)
+		if (control==0) begin
+			{carry,result} = a+b;
+			of = (a[3]==b[3])&&(result[3]!=a[3]);
+			zf = ~(|result);
+		end
+		else begin
+			{carry,result} = a+(4'b1111)^b+1;
+			of = 0;
+			zf = ~(|result);
+		end
+endmodule 

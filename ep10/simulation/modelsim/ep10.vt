@@ -1,0 +1,124 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "12/02/2019 19:42:35"
+                                                                                
+// Verilog Test Bench template for design : ep10
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module ep10_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg AUD_ADCDAT;
+reg treg_AUD_ADCLRCK;
+reg treg_AUD_BCLK;
+reg treg_AUD_DACLRCK;
+reg CLOCK2_50;
+reg CLOCK3_50;
+reg CLOCK4_50;
+reg CLOCK_50;
+reg treg_FPGA_I2C_SDAT;
+reg [3:0] KEY;
+reg treg_PS2_CLK;
+reg treg_PS2_CLK2;
+reg treg_PS2_DAT;
+reg treg_PS2_DAT2;
+reg [9:0] SW;
+// wires                                               
+wire AUD_ADCLRCK;
+wire AUD_BCLK;
+wire AUD_DACDAT;
+wire AUD_DACLRCK;
+wire AUD_XCK;
+wire FPGA_I2C_SCLK;
+wire FPGA_I2C_SDAT;
+wire [6:0]  HEX0;
+wire [6:0]  HEX1;
+wire [6:0]  HEX2;
+wire [6:0]  HEX3;
+wire [6:0]  HEX4;
+wire [6:0]  HEX5;
+wire [9:0]  LEDR;
+wire PS2_CLK;
+wire PS2_CLK2;
+wire PS2_DAT;
+wire PS2_DAT2;
+
+// assign statements (if any)                          
+assign AUD_ADCLRCK = treg_AUD_ADCLRCK;
+assign AUD_BCLK = treg_AUD_BCLK;
+assign AUD_DACLRCK = treg_AUD_DACLRCK;
+assign FPGA_I2C_SDAT = treg_FPGA_I2C_SDAT;
+assign PS2_CLK = treg_PS2_CLK;
+assign PS2_CLK2 = treg_PS2_CLK2;
+assign PS2_DAT = treg_PS2_DAT;
+assign PS2_DAT2 = treg_PS2_DAT2;
+ep10 i1 (
+// port map - connection between master ports and signals/registers   
+	.AUD_ADCDAT(AUD_ADCDAT),
+	.AUD_ADCLRCK(AUD_ADCLRCK),
+	.AUD_BCLK(AUD_BCLK),
+	.AUD_DACDAT(AUD_DACDAT),
+	.AUD_DACLRCK(AUD_DACLRCK),
+	.AUD_XCK(AUD_XCK),
+	.CLOCK2_50(CLOCK2_50),
+	.CLOCK3_50(CLOCK3_50),
+	.CLOCK4_50(CLOCK4_50),
+	.CLOCK_50(CLOCK_50),
+	.FPGA_I2C_SCLK(FPGA_I2C_SCLK),
+	.FPGA_I2C_SDAT(FPGA_I2C_SDAT),
+	.HEX0(HEX0),
+	.HEX1(HEX1),
+	.HEX2(HEX2),
+	.HEX3(HEX3),
+	.HEX4(HEX4),
+	.HEX5(HEX5),
+	.KEY(KEY),
+	.LEDR(LEDR),
+	.PS2_CLK(PS2_CLK),
+	.PS2_CLK2(PS2_CLK2),
+	.PS2_DAT(PS2_DAT),
+	.PS2_DAT2(PS2_DAT2),
+	.SW(SW)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

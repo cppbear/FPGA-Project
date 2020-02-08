@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep9/ep9_1/simulation/modelsim
+vclkgen
+!s110 1574771609
+!i10b 1
+!s100 gSG`<3^Hz@I[cz;>h4[hj2
+I3gzET0NciGd=3m_T]ijaW0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574771089
+8F:/FPGA Project/ep9/ep9_1/clkgen.v
+FF:/FPGA Project/ep9/ep9_1/clkgen.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1574771609.000000
+!s107 F:/FPGA Project/ep9/ep9_1/clkgen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_1|F:/FPGA Project/ep9/ep9_1/clkgen.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep9/ep9_1}
+Z6 tCvgOpt 0
+vep9_1
+Z7 !s110 1574771610
+!i10b 1
+!s100 fdPi<lc;7Scf?gWD81C7>0
+IP7S>PEcT>fObHHbYf@P7E3
+R1
+R0
+w1573130495
+8F:/FPGA Project/ep9/ep9_1/ep9_1.v
+FF:/FPGA Project/ep9/ep9_1/ep9_1.v
+L0 6
+R2
+r1
+!s85 0
+31
+Z8 !s108 1574771610.000000
+!s107 F:/FPGA Project/ep9/ep9_1/ep9_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_1|F:/FPGA Project/ep9/ep9_1/ep9_1.v|
+!i113 1
+R4
+R5
+R6
+vep9_1_vlg_tst
+R7
+!i10b 1
+!s100 96hM5H2iQz=lzZi29ZRWk2
+IPCz>`l`KR1i`6Teb=2jba0
+R1
+R0
+w1574771591
+8F:/FPGA Project/ep9/ep9_1/simulation/modelsim/ep9_1.vt
+FF:/FPGA Project/ep9/ep9_1/simulation/modelsim/ep9_1.vt
+L0 28
+R2
+r1
+!s85 0
+31
+R8
+!s107 F:/FPGA Project/ep9/ep9_1/simulation/modelsim/ep9_1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_1/simulation/modelsim|F:/FPGA Project/ep9/ep9_1/simulation/modelsim/ep9_1.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep9/ep9_1/simulation/modelsim}
+R6
+vpattern
+R7
+!i10b 1
+!s100 _S]Z>IBgHAkV>P<d]Z[_;2
+IoHA0I75fJgdDO4U:G[l>b1
+R1
+R0
+w1574771375
+8F:/FPGA Project/ep9/ep9_1/pattern.v
+FF:/FPGA Project/ep9/ep9_1/pattern.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 F:/FPGA Project/ep9/ep9_1/pattern.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_1|F:/FPGA Project/ep9/ep9_1/pattern.v|
+!i113 1
+R4
+R5
+R6
+vvga_ctrl
+R7
+!i10b 1
+!s100 ik;dcF;3H`R>[<3FdKKkm0
+ID6:8G9QNhe;g3F_Y;6>QG1
+R1
+R0
+w1574770061
+8F:/FPGA Project/ep9/ep9_1/vga_ctrl.v
+FF:/FPGA Project/ep9/ep9_1/vga_ctrl.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 F:/FPGA Project/ep9/ep9_1/vga_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_1|F:/FPGA Project/ep9/ep9_1/vga_ctrl.v|
+!i113 1
+R4
+R5
+R6

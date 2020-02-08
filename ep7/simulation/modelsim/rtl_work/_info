@@ -1,0 +1,144 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep7/simulation/modelsim
+vep7
+Z1 !s110 1573041994
+!i10b 1
+!s100 9I11lk^iSh=aO<9EjYU0C3
+IEE_8=X9<2M^X0ZSEVR0Rh1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1570727716
+8F:/FPGA Project/ep7/ep7.v
+FF:/FPGA Project/ep7/ep7.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1573041994.000000
+!s107 F:/FPGA Project/ep7/ep7.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7|F:/FPGA Project/ep7/ep7.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep7}
+Z7 tCvgOpt 0
+vep7_vlg_tst
+Z8 !s110 1573041995
+!i10b 1
+!s100 j<TM5;Xa9_l`QX8OUGFCM3
+I5cW[zSLa;31^fI^M]QD4J1
+R2
+R0
+w1573041835
+8F:/FPGA Project/ep7/simulation/modelsim/ep7.vt
+FF:/FPGA Project/ep7/simulation/modelsim/ep7.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1573041995.000000
+!s107 F:/FPGA Project/ep7/simulation/modelsim/ep7.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7/simulation/modelsim|F:/FPGA Project/ep7/simulation/modelsim/ep7.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep7/simulation/modelsim}
+R7
+vmy_clock
+R1
+!i10b 1
+!s100 8C[^fnPV2i4[R:U5izm3k0
+IDG4o2C1S0Lm[`MXj3lWBo1
+R2
+R0
+w1573041985
+8F:/FPGA Project/ep7/my_clock.v
+FF:/FPGA Project/ep7/my_clock.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep7/my_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7|F:/FPGA Project/ep7/my_clock.v|
+!i113 1
+R5
+R6
+R7
+vmy_hex
+R1
+!i10b 1
+!s100 M@=fNXT?aH5bK3]Qb8T9M0
+IH9_gN3dSE7BRP:gC6Yfgc3
+R2
+R0
+w1570336238
+8F:/FPGA Project/ep7/my_hex.v
+FF:/FPGA Project/ep7/my_hex.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep7/my_hex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7|F:/FPGA Project/ep7/my_hex.v|
+!i113 1
+R5
+R6
+R7
+vRAM_1
+R8
+!i10b 1
+!s100 V]M5gHzL2W;1Ba<^]o8430
+IIcUgD_k9Vzjbi;JI@L5:l0
+R2
+R0
+w1573041936
+8F:/FPGA Project/ep7/RAM_1.v
+FF:/FPGA Project/ep7/RAM_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep7/RAM_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7|F:/FPGA Project/ep7/RAM_1.v|
+!i113 1
+R5
+R6
+R7
+n@r@a@m_1
+vRAM_2
+R1
+!i10b 1
+!s100 0:;EiOFzBVJOVA4HLWbWm0
+IA`k0R?34lVCf1?P0J54YO2
+R2
+R0
+w1570727165
+8F:/FPGA Project/ep7/RAM_2.v
+FF:/FPGA Project/ep7/RAM_2.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep7/RAM_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep7|F:/FPGA Project/ep7/RAM_2.v|
+!i113 1
+R5
+R6
+R7
+n@r@a@m_2

@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep3_2/simulation/modelsim
+valu
+!s110 1569247280
+!i10b 1
+!s100 zR?E<;iOU[Xe4D0X6?]oN2
+IV1[i51faNGWF[IH0H1oGz1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1568941237
+8F:/FPGA Project/ep3_2/alu.v
+FF:/FPGA Project/ep3_2/alu.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1569247280.000000
+!s107 F:/FPGA Project/ep3_2/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep3_2|F:/FPGA Project/ep3_2/alu.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep3_2}
+Z6 tCvgOpt 0
+vep3_2
+Z7 !s110 1569247281
+!i10b 1
+!s100 hVO;>9M>9^9lX:K<]TI;d3
+I2id^f8X7U;T4ilfb1n>=:1
+R1
+R0
+w1568127925
+8F:/FPGA Project/ep3_2/ep3_2.v
+FF:/FPGA Project/ep3_2/ep3_2.v
+L0 6
+R2
+r1
+!s85 0
+31
+R3
+!s107 F:/FPGA Project/ep3_2/ep3_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep3_2|F:/FPGA Project/ep3_2/ep3_2.v|
+!i113 1
+R4
+R5
+R6
+vep3_2_vlg_tst
+R7
+!i10b 1
+!s100 hjo91@CPJ>MNk@]iz?]4=2
+IU5lKzcO_``ZNj9Wh_X4dJ0
+R1
+R0
+w1568128947
+8F:/FPGA Project/ep3_2/simulation/modelsim/ep3_2.vt
+FF:/FPGA Project/ep3_2/simulation/modelsim/ep3_2.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1569247281.000000
+!s107 F:/FPGA Project/ep3_2/simulation/modelsim/ep3_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep3_2/simulation/modelsim|F:/FPGA Project/ep3_2/simulation/modelsim/ep3_2.vt|
+!i113 1
+R4
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep3_2/simulation/modelsim}
+R6

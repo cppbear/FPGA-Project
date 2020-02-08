@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ex8_2/simulation/modelsim
+vex8_2
+Z1 !s110 1574230207
+!i10b 1
+!s100 ;[PRF<YDFQSD8QcWVTV8D1
+ID1kUQel<<[hPFWLh@dXoG2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574179825
+8F:/FPGA Project/ex8_2/ex8_2.v
+FF:/FPGA Project/ex8_2/ex8_2.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1574230207.000000
+!s107 F:/FPGA Project/ex8_2/ex8_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ex8_2|F:/FPGA Project/ex8_2/ex8_2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ex8_2}
+Z7 tCvgOpt 0
+vex8_2_vlg_tst
+Z8 !s110 1574230208
+!i10b 1
+!s100 0^ghIbYaooaSgV<_a55251
+IiRT9P1XhZd@_NU>9RZM;_1
+R2
+R0
+w1574230192
+8F:/FPGA Project/ex8_2/simulation/modelsim/ex8_2.vt
+FF:/FPGA Project/ex8_2/simulation/modelsim/ex8_2.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ex8_2/simulation/modelsim/ex8_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ex8_2/simulation/modelsim|F:/FPGA Project/ex8_2/simulation/modelsim/ex8_2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ex8_2/simulation/modelsim}
+R7
+vout_put
+R1
+!i10b 1
+!s100 0O:D1F6ZOn<ic?T3Z?oWQ2
+IJj9NlmO5DhXDdPUmBBemm2
+R2
+R0
+w1572444211
+8F:/FPGA Project/ex8_2/out_put.v
+FF:/FPGA Project/ex8_2/out_put.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ex8_2/out_put.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ex8_2|F:/FPGA Project/ex8_2/out_put.v|
+!i113 1
+R5
+R6
+R7
+vps2_keyboard
+R8
+!i10b 1
+!s100 C8B9J99hRaTgJEZAP:X?H2
+IgdlY5HAEm_[LVJYbNhLfj2
+R2
+R0
+w1572436250
+8F:/FPGA Project/ex8_2/ps2_keyboard.v
+FF:/FPGA Project/ex8_2/ps2_keyboard.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1574230208.000000
+!s107 F:/FPGA Project/ex8_2/ps2_keyboard.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ex8_2|F:/FPGA Project/ex8_2/ps2_keyboard.v|
+!i113 1
+R5
+R6
+R7
+vps2_keyboard_model
+R1
+!i10b 1
+!s100 0n9><djiAcG@DYBii^]z62
+In9i48fQ_@E9:[7@7fjiT[1
+R2
+R0
+w1572261674
+8F:/FPGA Project/ex8_2/ps2_keyboard_model.v
+FF:/FPGA Project/ex8_2/ps2_keyboard_model.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ex8_2/ps2_keyboard_model.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ex8_2|F:/FPGA Project/ex8_2/ps2_keyboard_model.v|
+!i113 1
+R5
+R6
+R7

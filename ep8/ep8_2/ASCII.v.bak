@@ -1,0 +1,25 @@
+module show_ascii(pre, up, my_data, ascii1, ascii2, hex2, hex3, preflag);
+	input pre, preflag, up;
+	input [7:0]my_data, ascii1, ascii2;
+	reg [7:0] ascii;
+	output reg [6:0]hex2, hex3;
+	
+	my_hex h2(ascii[3:0], hex2);
+	my_hex h3(ascii[3:0], hex3);
+	
+	always
+	begin
+		if(pre == 1 && my_data[7:0] != 8'hf0)
+		begin	
+			if(up == 1)
+				ascii = ascii2;
+			else
+				ascii = ascii1;
+		end
+		else
+		begin
+			seg3[6:0] = 7'b1111111;
+			seg4[6:0] = 7'b1111111;
+		end
+	end
+endmodule

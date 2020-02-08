@@ -1,0 +1,10 @@
+|unlock
+clk => out_unlock2~reg0.CLK
+clk => out_unlock1~reg0.CLK
+in_en => out_unlock2~reg0.ENA
+in_en => out_unlock1~reg0.ENA
+in_data => out_unlock1~reg0.DATAIN
+out_unlock1 << out_unlock1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out_unlock2 << out_unlock2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

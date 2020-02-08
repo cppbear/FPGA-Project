@@ -1,0 +1,10 @@
+module write_vmem(clk, count, data);
+	input clk;
+	input [11:0] count;
+	input [7:0] data;
+	wire [7:0] ascii_low, ascii_cap;
+	
+	ROM_low low(data, clk, ascii_low);
+	ROM_cap cap(data, clk, ascii_cap);
+	
+	

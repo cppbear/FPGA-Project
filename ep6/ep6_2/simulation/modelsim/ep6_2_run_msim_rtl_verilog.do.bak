@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+F:/FPGA\ Project/ep6/ep6_2 {F:/FPGA Project/ep6/ep6_2/my_clock.v}
+vlog -vlog01compat -work work +incdir+F:/FPGA\ Project/ep6/ep6_2 {F:/FPGA Project/ep6/ep6_2/my_hex.v}
+vlog -vlog01compat -work work +incdir+F:/FPGA\ Project/ep6/ep6_2 {F:/FPGA Project/ep6/ep6_2/LFSR.v}
+vlog -vlog01compat -work work +incdir+F:/FPGA\ Project/ep6/ep6_2 {F:/FPGA Project/ep6/ep6_2/ep6_2.v}
+

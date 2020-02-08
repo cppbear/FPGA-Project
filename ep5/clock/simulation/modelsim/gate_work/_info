@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep5/clock/simulation/modelsim
+vep5_2
+!s110 1571668307
+!i10b 1
+!s100 oO5UMMH]f?NOi11oQ0ZeY3
+IhA_F=^`nTej5H;=TSFLb72
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1569084695
+8ep5_2.vo
+Fep5_2.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571668307.000000
+!s107 ep5_2.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ep5_2.vo|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+Z4 tCvgOpt 0
+vep5_2_vlg_tst
+!s110 1571668308
+!i10b 1
+!s100 i]lUDHTYR@MP6QR;2;Q4J1
+IU05;^4;AThMo1a=leFUBK2
+R1
+R0
+w1571668296
+8F:/FPGA Project/ep5/clock/simulation/modelsim/ep5_2.vt
+FF:/FPGA Project/ep5/clock/simulation/modelsim/ep5_2.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1571668308.000000
+!s107 F:/FPGA Project/ep5/clock/simulation/modelsim/ep5_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep5/clock/simulation/modelsim|F:/FPGA Project/ep5/clock/simulation/modelsim/ep5_2.vt|
+!i113 1
+R3
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep5/clock/simulation/modelsim}
+R4

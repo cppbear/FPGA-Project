@@ -1,0 +1,62 @@
+`timescale 1 ns/ 1 ps
+module ex8_2_vlg_tst();
+/* parameter */
+ parameter [31:0] clock_period = 10;
+
+ /* ps2_keyboard interface signals */
+ reg clk,clrn;
+ wire [7:0] data;
+ wire ready,overflow;
+ wire kbd_clk, kbd_data;
+ reg nextdata_n;
+ ps2_keyboard inst(
+ .clk(clk),
+ .clrn(clrn),
+ .ps2_clk(kbd_clk),
+ .ps2_data(kbd_data),
+ .data(data),
+ .ready(ready),
+ .nextdata_n(nextdata_n),
+ .overflow(overflow)
+ );
+
+ initial begin /* clock driver */
+ clk = 0;
+ forever
+ #(clock_period/2) clk = ~clk;
+ end
+ 
+ ps2_keyboard_model model(
+ .ps2_clk(kbd_clk),
+ .ps2_data(kbd_data)
+ );
+
+ 
+
+initial begin
+
+//clrn = 1'b0; #20;
+//clrn = 1'b1; #20;
+ 
+model.kbd_sendcode(8'h12); // press 'Shift'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1;//read data
+model.kbd_sendcode(8'h21); // press 'C'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'hF0); // break code
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'h14); // release 'Shift'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'hF0); // break code
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'h21); // release 'C'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'h32); // press 'b'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1;//read data
+model.kbd_sendcode(8'hF0); // break code
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+model.kbd_sendcode(8'h32); // release 'b'
+#20 nextdata_n =1'b0; #20 nextdata_n =1'b1; //read data
+$stop;                    
+end
+
+endmodule

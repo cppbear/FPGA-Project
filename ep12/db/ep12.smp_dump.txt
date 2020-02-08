@@ -1,0 +1,14 @@
+
+State Machine - |ep12|keyboard:my_k|year_flag
+Name year_flag.11 year_flag.10 year_flag.01 year_flag.00 
+year_flag.00 0 0 0 0 
+year_flag.01 0 0 1 1 
+year_flag.10 0 1 0 1 
+year_flag.11 1 0 0 1 
+
+State Machine - |ep12|I2C_Audio_Config:myconfig|mi2c_state
+Name mi2c_state.11 mi2c_state.10 mi2c_state.01 mi2c_state.00 
+mi2c_state.00 0 0 0 0 
+mi2c_state.01 0 0 1 1 
+mi2c_state.10 0 1 0 1 
+mi2c_state.11 1 0 0 1 

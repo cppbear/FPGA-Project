@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ex8_2.v(58): always construct contains both blocking and non-blocking assignments File: D:/myAPP/quartus/workspace/ex8_2/ex8_2.v Line: 58

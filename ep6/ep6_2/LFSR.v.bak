@@ -1,0 +1,22 @@
+module LFSR(clk, hex0, hex1);
+	input clk;
+	wire clk_1s;
+	output [6:0] hex0, hex1;
+	reg [3:0] hex0_;
+	reg [3:0] hex1_;
+	reg [7:0] rand;
+	
+	my_clock mclk(clk, clk_1s);
+	my_hex h0(hex0_, hex0);
+	my_hex h1(hex1_, hex1);
+	
+	always @(posedge clk_1s)
+	begin
+		hex0_ <= rand[3:0];
+		hex1_ <= rand[7:4];
+		if (rand == 0)
+			rand <= 10;
+		else
+			rand <= {rand[4]^rand[3]^rand[2]^rand[0], rand[7:1]};
+	end
+endmodule

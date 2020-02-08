@@ -1,0 +1,7 @@
+module show(seg1,seg2,seg3,seg4,seg5,seg6);
+	input [6:0]seg1;
+	input [6:0]seg2;
+	input [6:0]seg3;
+	input [6:0]seg4;
+	input [6:0]seg5;
+	input [6:0]seg6;

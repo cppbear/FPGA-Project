@@ -1,0 +1,60 @@
+|ep8_1
+KEY[0] => KEY[0].IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] <= FSM_bin:FSM.port3
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= FSM_bin:FSM.port4
+LEDR[5] <= FSM_bin:FSM.port4
+LEDR[6] <= FSM_bin:FSM.port4
+LEDR[7] <= FSM_bin:FSM.port4
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|ep8_1|FSM_bin:FSM
+clk => state[0]~reg0.CLK
+clk => state[1]~reg0.CLK
+clk => state[2]~reg0.CLK
+clk => state[3]~reg0.CLK
+in => Mux1.IN4
+in => Mux1.IN5
+in => Mux3.IN6
+in => Mux1.IN6
+in => Mux3.IN7
+in => Mux3.IN8
+in => Mux1.IN7
+in => Mux2.IN7
+in => Mux1.IN8
+in => Mux2.IN8
+in => Mux0.IN7
+in => Mux0.IN8
+in => Mux2.IN5
+in => Mux2.IN6
+in => Mux3.IN3
+in => Mux3.IN4
+in => Mux3.IN5
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+out <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

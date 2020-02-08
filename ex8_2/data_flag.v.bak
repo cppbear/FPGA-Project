@@ -1,0 +1,17 @@
+module data_flag(data,nextdata_n)
+input [7:0]data;
+output reg nextdata_n;
+initial 
+	begin
+		nextdata_n=1'b0;
+		nextdata_n=1'b1;
+	end
+	
+always(@ *)
+	begin
+		nextdata_n=1'b0;
+		nextdata_n=1'b0;
+	end
+endmodule
+		
+		

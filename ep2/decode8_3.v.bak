@@ -1,0 +1,30 @@
+module decode8_3(x,en,y,stat,hex);
+	input [7:0] x;
+	input en;
+	output reg [2:0] y;
+	output reg stat;
+	output reg [6:0] hex;
+	integer i;
+	always @(x or en) begin
+		if (en) begin
+			y=0;
+			for (i=0;i<=7;i=i+1)
+				if(x[i]==1) y=i;
+		end
+		else y=0;
+		
+		if (y) stat=1;
+		else stat=0;
+		
+		case (y)
+			3'b000: hex=7'b0000000;
+			3'b001: hex=7'b0000110;
+			3'b010: hex=7'b1011011;
+			3'b011: hex=7'b1001111;
+			3'b100: hex=7'b6500011;
+			3'b101: hex=7'b1100101;
+			3'b110: hex=7'b0000111;
+			3'b111: hex=7'b1111111;
+		endcase
+	end
+endmodule 

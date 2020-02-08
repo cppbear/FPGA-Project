@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at RAM_backspace.v(22): always construct contains both blocking and non-blocking assignments File: F:/FPGA Project/ep11/RAM_backspace.v Line: 22

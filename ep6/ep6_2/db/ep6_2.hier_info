@@ -1,0 +1,135 @@
+|ep6_2
+CLOCK2_50 => ~NO_FANOUT~
+CLOCK3_50 => ~NO_FANOUT~
+CLOCK4_50 => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+HEX0[0] << LFSR:my_lfsr.port1
+HEX0[1] << LFSR:my_lfsr.port1
+HEX0[2] << LFSR:my_lfsr.port1
+HEX0[3] << LFSR:my_lfsr.port1
+HEX0[4] << LFSR:my_lfsr.port1
+HEX0[5] << LFSR:my_lfsr.port1
+HEX0[6] << LFSR:my_lfsr.port1
+HEX1[0] << LFSR:my_lfsr.port2
+HEX1[1] << LFSR:my_lfsr.port2
+HEX1[2] << LFSR:my_lfsr.port2
+HEX1[3] << LFSR:my_lfsr.port2
+HEX1[4] << LFSR:my_lfsr.port2
+HEX1[5] << LFSR:my_lfsr.port2
+HEX1[6] << LFSR:my_lfsr.port2
+HEX2[0] << <GND>
+HEX2[1] << <GND>
+HEX2[2] << <GND>
+HEX2[3] << <GND>
+HEX2[4] << <GND>
+HEX2[5] << <GND>
+HEX2[6] << <GND>
+HEX3[0] << <VCC>
+HEX3[1] << <VCC>
+HEX3[2] << <VCC>
+HEX3[3] << <VCC>
+HEX3[4] << <VCC>
+HEX3[5] << <VCC>
+HEX3[6] << <VCC>
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << <VCC>
+
+
+|ep6_2|LFSR:my_lfsr
+clk => clk.IN1
+hex0[0] <= my_hex:h0.y[0]
+hex0[1] <= my_hex:h0.y[1]
+hex0[2] <= my_hex:h0.y[2]
+hex0[3] <= my_hex:h0.y[3]
+hex0[4] <= my_hex:h0.y[4]
+hex0[5] <= my_hex:h0.y[5]
+hex0[6] <= my_hex:h0.y[6]
+hex1[0] <= my_hex:h1.y[0]
+hex1[1] <= my_hex:h1.y[1]
+hex1[2] <= my_hex:h1.y[2]
+hex1[3] <= my_hex:h1.y[3]
+hex1[4] <= my_hex:h1.y[4]
+hex1[5] <= my_hex:h1.y[5]
+hex1[6] <= my_hex:h1.y[6]
+
+
+|ep6_2|LFSR:my_lfsr|my_clock:mclk
+clk => clk_1s~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk_1s <= clk_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep6_2|LFSR:my_lfsr|my_hex:h0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep6_2|LFSR:my_lfsr|my_hex:h1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

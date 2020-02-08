@@ -1,0 +1,19 @@
+-- begin_signature
+-- picture
+-- end_signature
+WIDTH=4;
+DEPTH=8;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	7 :	0110;
+	6 :	0010;
+	5 :	0010;
+	4 :	0001;
+	3 :	1001;
+	2 :	0001;
+	1 :	0000;
+	0 :	0010;
+END;

@@ -1,0 +1,255 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep8/ep8_2/simulation/modelsim
+vASCII
+Z1 !s110 1574178689
+!i10b 1
+!s100 [@3[@YYdDcKL9SVac`bH43
+II9@YJOBiz^0ecTYFS:CRM0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574090765
+8F:/FPGA Project/ep8/ep8_2/ASCII.v
+FF:/FPGA Project/ep8/ep8_2/ASCII.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1574178689.000000
+!s107 F:/FPGA Project/ep8/ep8_2/ASCII.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/ASCII.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep8/ep8_2}
+Z7 tCvgOpt 0
+n@a@s@c@i@i
+vcode
+Z8 !s110 1574178690
+!i10b 1
+!s100 JTN`1f0GhTF<@h^Oe8;`i0
+IfIk[PYE6bhc?Dn2P9h3bE1
+R2
+R0
+w1574161336
+8F:/FPGA Project/ep8/ep8_2/code.v
+FF:/FPGA Project/ep8/ep8_2/code.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1574178690.000000
+!s107 F:/FPGA Project/ep8/ep8_2/code.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/code.v|
+!i113 1
+R5
+R6
+R7
+vcount
+R8
+!i10b 1
+!s100 Acde_HE;Vz6URhb=S]E[N3
+IlN@FWOGKNNE@k4RzH:?o:2
+R2
+R0
+w1574159980
+8F:/FPGA Project/ep8/ep8_2/count.v
+FF:/FPGA Project/ep8/ep8_2/count.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/FPGA Project/ep8/ep8_2/count.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/count.v|
+!i113 1
+R5
+R6
+R7
+vep8_2
+R8
+!i10b 1
+!s100 @fT]]B@2Se_2fbN?5bS_`3
+Img:8k6aUe_b^h_GkC`W]h3
+R2
+R0
+w1574093985
+8F:/FPGA Project/ep8/ep8_2/ep8_2.v
+FF:/FPGA Project/ep8/ep8_2/ep8_2.v
+L0 6
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/FPGA Project/ep8/ep8_2/ep8_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/ep8_2.v|
+!i113 1
+R5
+R6
+R7
+vep8_2_vlg_tst
+R8
+!i10b 1
+!s100 EfCzYZMQNI8I:[^Bh9`D_2
+INaQb_?EEO7R3aM5So7eR40
+R2
+R0
+w1574178668
+8F:/FPGA Project/ep8/ep8_2/simulation/modelsim/ep8_2.vt
+FF:/FPGA Project/ep8/ep8_2/simulation/modelsim/ep8_2.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/FPGA Project/ep8/ep8_2/simulation/modelsim/ep8_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2/simulation/modelsim|F:/FPGA Project/ep8/ep8_2/simulation/modelsim/ep8_2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep8/ep8_2/simulation/modelsim}
+R7
+vkeyboard
+R1
+!i10b 1
+!s100 gUQH_DA21NO]2f=EiOCAj1
+I9C6UHz<i8B@oM=0SCYzEX2
+R2
+R0
+w1574159998
+8F:/FPGA Project/ep8/ep8_2/keyboard.v
+FF:/FPGA Project/ep8/ep8_2/keyboard.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep8/ep8_2/keyboard.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/keyboard.v|
+!i113 1
+R5
+R6
+R7
+vmy_clock
+R1
+!i10b 1
+!s100 U4zNOIWnPd6<UGee<8MVZ3
+I2jCQWaHRfORXo1iHaDnni1
+R2
+R0
+w1574161268
+8F:/FPGA Project/ep8/ep8_2/my_clock.v
+FF:/FPGA Project/ep8/ep8_2/my_clock.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep8/ep8_2/my_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/my_clock.v|
+!i113 1
+R5
+R6
+R7
+vmy_hex
+R8
+!i10b 1
+!s100 =bW6gOXiJWG5lXP89SidZ1
+InQj9QQnkDf6;Fz?F1McgS1
+R2
+R0
+w1574090731
+8F:/FPGA Project/ep8/ep8_2/my_hex.v
+FF:/FPGA Project/ep8/ep8_2/my_hex.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/FPGA Project/ep8/ep8_2/my_hex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/my_hex.v|
+!i113 1
+R5
+R6
+R7
+vps2_keyboard
+R8
+!i10b 1
+!s100 5kYodkSj6BKX5^R:QC85U0
+I;j[PQKkfBTdA;zYiIPdeA3
+R2
+R0
+w1574161363
+8F:/FPGA Project/ep8/ep8_2/ps2_keyboard.v
+FF:/FPGA Project/ep8/ep8_2/ps2_keyboard.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/FPGA Project/ep8/ep8_2/ps2_keyboard.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/ps2_keyboard.v|
+!i113 1
+R5
+R6
+R7
+vROM1
+R1
+!i10b 1
+!s100 MZnS39A2n2PR0<gX8>`2<2
+IK7l7=8OMkG3iFUW4IiNC=2
+R2
+R0
+w1572442289
+8F:/FPGA Project/ep8/ep8_2/ROM1.v
+FF:/FPGA Project/ep8/ep8_2/ROM1.v
+Z10 L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep8/ep8_2/ROM1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/ROM1.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@m1
+vROM2
+R8
+!i10b 1
+!s100 8ReANRf@1?Y@bShP<;83B2
+IR>CHSMb?Kl20`@1nVlG1:3
+R2
+R0
+w1572442305
+8F:/FPGA Project/ep8/ep8_2/ROM2.v
+FF:/FPGA Project/ep8/ep8_2/ROM2.v
+R10
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep8/ep8_2/ROM2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep8/ep8_2|F:/FPGA Project/ep8/ep8_2/ROM2.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@m2

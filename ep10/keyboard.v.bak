@@ -1,0 +1,104 @@
+module keyboard(clk, ps2_clk, ps2_data, hex0, hex1, hex2, hex3, hex4, hex5, up, ctrlc, ctrlv);
+	input clk, ps2_clk, ps2_data;
+	//output ready, overflow;
+	output [6:0] hex0, hex1, hex2, hex3, hex4, hex5;
+	output reg up, ctrlc, ctrlv;
+	
+	reg upflag1, upflag2, ctrl, ctrlflag, nextdata_n, pre;
+	wire myClock, ready, overflow;
+	wire [7:0] data, ascii1, ascii2;
+	reg [7:0] my_data, count_;
+
+	initial
+	begin
+		nextdata_n = 1;
+		pre = 1;
+		count_ = 8'b00000000;
+		my_data = 8'b00000000;
+		up = 0;
+		upflag1 = 0;
+		upflag2 = 0;
+		ctrlc = 0;
+		ctrlv = 0;
+		ctrlflag = 0;
+		ctrl = 0;
+	end
+
+	my_clock mycl(clk, myClock);
+	ps2_keyboard key(clk, 1, ps2_clk, ps2_data, data, ready, nextdata_n, overflow);
+	ROM1 r1(my_data, clk, ascii1);
+	ROM2 r2(my_data, clk, ascii2);
+	code co(pre, my_data, hex0, hex1);
+	ASCII ascii(pre, up, my_data, ascii1, ascii2, hex2, hex3);
+	count ct(count_, hex4, hex5);
+	
+	always @(posedge myClock)
+	begin
+		if (ready == 1)
+		begin
+			if (data[7:0] == 8'h58)
+			begin
+				if (pre == 1 && upflag1 == 0)
+				begin
+					up = ~up;
+					upflag1 = 1;
+				end
+				else if (pre == 0)
+					upflag1 = 0;
+			end
+			
+			if (data[7:0] == 8'h12 || data[7:0] == 8'h59)
+			begin
+				if (pre == 1 && upflag2 == 0)
+				begin
+					up = ~up;
+					upflag2 = 1;
+				end
+				else if (pre == 0)
+				begin
+					up = ~up;
+					upflag1 = 0;
+				end
+			end
+			
+			if (data[7:0] == 8'h14)
+			begin
+				if((pre == 1) && (ctrlflag == 0))
+				begin
+					ctrl = 1; ctrlflag = 1;
+				end
+				else if(pre == 0)
+				begin
+					ctrl = 0;
+					ctrlflag = 0;
+				end
+			end
+			
+			if((data[7:0] != 8'hf0) && (pre == 1))
+			begin
+				pre = 1;
+				my_data = data;
+				if((ctrl == 1) && (my_data[7:0] == 8'h21))
+					ctrlc = 1;
+				if((ctrl == 1) && (my_data[7:0] == 8'h2A))
+					ctrlv = 1;
+			end
+			else if(data[7:0] == 8'hf0)
+			begin
+				pre = 0;
+				count_ = count_ + 1;
+				my_data = data; 
+				ctrlc = 0;
+				ctrlv = 0;
+			end
+			else if(pre == 0)    
+				pre = 1;
+			
+			nextdata_n = 0;
+		end
+		
+		else
+			nextdata_n = 1;
+	end
+
+endmodule

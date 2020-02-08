@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep4/Trigger/simulation/modelsim
+vasynchro
+Z1 !s110 1571138512
+!i10b 1
+!s100 JOA9niCC18b2UQREe>z]J0
+IG9HHM:R5jSh@oVQ`GMgcn3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1568939866
+8F:/FPGA Project/ep4/Trigger/asynchro.v
+FF:/FPGA Project/ep4/Trigger/asynchro.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1571138512.000000
+!s107 F:/FPGA Project/ep4/Trigger/asynchro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep4/Trigger|F:/FPGA Project/ep4/Trigger/asynchro.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep4/Trigger}
+Z7 tCvgOpt 0
+vsynchro
+R1
+!i10b 1
+!s100 JdcMlWeX<GVPZIoz];b3C0
+Iil8gY;9OBZn`TPgLb;:Ac0
+R2
+R0
+w1568989136
+8F:/FPGA Project/ep4/Trigger/synchro.v
+FF:/FPGA Project/ep4/Trigger/synchro.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep4/Trigger/synchro.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep4/Trigger|F:/FPGA Project/ep4/Trigger/synchro.v|
+!i113 1
+R5
+R6
+R7
+vTrigger
+R1
+!i10b 1
+!s100 Z7bBe8OQBOOTnl9Vc_?do0
+Iee7e2CQ7bT>7IozJAGRPD1
+R2
+R0
+w1568939710
+8F:/FPGA Project/ep4/Trigger/trigger.v
+FF:/FPGA Project/ep4/Trigger/trigger.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep4/Trigger/trigger.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep4/Trigger|F:/FPGA Project/ep4/Trigger/trigger.v|
+!i113 1
+R5
+R6
+R7
+n@trigger
+vTrigger_vlg_tst
+R1
+!i10b 1
+!s100 A[gSWhE[ZI6<]oznj8DHZ1
+IQ8LKQXR^?Y:[cAUNf03OU3
+R2
+R0
+w1568988498
+8F:/FPGA Project/ep4/Trigger/simulation/modelsim/Trigger.vt
+FF:/FPGA Project/ep4/Trigger/simulation/modelsim/Trigger.vt
+L0 28
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep4/Trigger/simulation/modelsim/Trigger.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep4/Trigger/simulation/modelsim|F:/FPGA Project/ep4/Trigger/simulation/modelsim/Trigger.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep4/Trigger/simulation/modelsim}
+R7
+n@trigger_vlg_tst

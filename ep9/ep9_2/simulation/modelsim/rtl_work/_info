@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep9/ep9_2/simulation/modelsim
+vclkgen
+Z1 !s110 1574772593
+!i10b 1
+!s100 gSG`<3^Hz@I[cz;>h4[hj2
+IICbJkifTbkDfHJD2kggL<1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1574772210
+8F:/FPGA Project/ep9/ep9_2/clkgen.v
+FF:/FPGA Project/ep9/ep9_2/clkgen.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1574772593.000000
+!s107 F:/FPGA Project/ep9/ep9_2/clkgen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2|F:/FPGA Project/ep9/ep9_2/clkgen.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep9/ep9_2}
+Z7 tCvgOpt 0
+vep9_2
+R1
+!i10b 1
+!s100 hZ:KDcME]36?UQMX9fAQ^0
+I=U2>NHOhbe8SzE<__9A?h1
+R2
+R0
+w1573131379
+8F:/FPGA Project/ep9/ep9_2/ep9_2.v
+FF:/FPGA Project/ep9/ep9_2/ep9_2.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep9/ep9_2/ep9_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2|F:/FPGA Project/ep9/ep9_2/ep9_2.v|
+!i113 1
+R5
+R6
+R7
+vep9_2_vlg_tst
+R1
+!i10b 1
+!s100 2OZkz7K6Eg6kld8KFd`LF3
+IBJhDS:mg77cJ1Y=7[4FUk3
+R2
+R0
+w1574772543
+8F:/FPGA Project/ep9/ep9_2/simulation/modelsim/ep9_2.vt
+FF:/FPGA Project/ep9/ep9_2/simulation/modelsim/ep9_2.vt
+L0 28
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep9/ep9_2/simulation/modelsim/ep9_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2/simulation/modelsim|F:/FPGA Project/ep9/ep9_2/simulation/modelsim/ep9_2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep9/ep9_2/simulation/modelsim}
+R7
+vpicture
+R1
+!i10b 1
+!s100 02zV:iE2jc9A1_=CIIGXD2
+IU:jn7_dFT1Uk@NQ:52@PB0
+R2
+R0
+w1574772192
+8F:/FPGA Project/ep9/ep9_2/picture.v
+FF:/FPGA Project/ep9/ep9_2/picture.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep9/ep9_2/picture.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2|F:/FPGA Project/ep9/ep9_2/picture.v|
+!i113 1
+R5
+R6
+R7
+vROM
+R1
+!i10b 1
+!s100 [b3IZ1?:G>ZnfLcng?FDl3
+I=BW^39zo<Paji_fP_0G]a3
+R2
+R0
+w1573176767
+8F:/FPGA Project/ep9/ep9_2/ROM.v
+FF:/FPGA Project/ep9/ep9_2/ROM.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep9/ep9_2/ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2|F:/FPGA Project/ep9/ep9_2/ROM.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@m
+vvga_ctrl
+R1
+!i10b 1
+!s100 ik;dcF;3H`R>[<3FdKKkm0
+IRo<]mlibnASmLXkiKRd>g3
+R2
+R0
+w1574772228
+8F:/FPGA Project/ep9/ep9_2/vga_ctrl.v
+FF:/FPGA Project/ep9/ep9_2/vga_ctrl.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep9/ep9_2/vga_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep9/ep9_2|F:/FPGA Project/ep9/ep9_2/vga_ctrl.v|
+!i113 1
+R5
+R6
+R7

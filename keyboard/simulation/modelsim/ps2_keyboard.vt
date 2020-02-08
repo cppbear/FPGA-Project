@@ -1,0 +1,121 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "11/06/2018 17:25:01"
+                                                                                
+// Verilog Test Bench template for design : ps2_keyboard
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module ps2_keyboard_vlg_tst();
+// constants                                           
+// general purpose registers
+// reg eachvec;
+// test vector input registers
+parameter [31:0] clock_period = 10; 
+parameter [31:0] kbd_clk_period = 60; 
+reg clk;
+reg clrn;
+reg nextdata_n;
+reg ps2_clk;
+reg ps2_data;
+// wires                                               
+wire [7:0]  data;
+wire overflow;
+wire ready;
+
+// assign statements (if any)                          
+ps2_keyboard i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.clrn(clrn),
+	.data(data),
+	.nextdata_n(nextdata_n),
+	.overflow(overflow),
+	.ps2_clk(ps2_clk),
+	.ps2_data(ps2_data),
+	.ready(ready)
+);
+
+task kbd_sendcode; 
+	input [7:0] code; // key to be sent 
+	integer i; 
+	reg[10:0] send_buffer; 
+	
+	begin 
+		send_buffer[0] = 1'b0; // start bit 
+	   send_buffer[8:1] = code; // code
+		send_buffer[9] = ~(^code); // odd parity bit 
+		send_buffer[10] = 1'b1; // stop bit 
+		i = 0; 
+		while( i < 11) 
+		begin 
+			// set kbd_data
+			ps2_data = send_buffer[i]; 
+			#(kbd_clk_period/2) ps2_clk = 1'b0; 
+			#(kbd_clk_period/2) ps2_clk = 1'b1;
+			i = i + 1; 
+		end
+	end
+endtask
+initial ps2_clk = 1'b1; 
+
+initial begin /* clock driver */ 
+ clk = 0; 
+ nextdata_n = 0;
+ forever 
+ #(clock_period/2) clk = !clk; 
+end
+ 
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+     clrn = 1'b0; #20; 
+	  clrn = 1'b1; #20; 
+	  kbd_sendcode(8'h1C); #20// press 'A'  
+	  //nextdata_n =1'b0; #20 //nextdata_n =1'b1;//read data 
+	  kbd_sendcode(8'hF0); #20// break code 
+	  //nextdata_n =1'b0; #20 //nextdata_n =1'b1; //read data 
+	  kbd_sendcode(8'h1C);  #20// release 'A' 
+	  //nextdata_n =1'b0; #20 //nextdata_n =1'b1; //read data 
+	  kbd_sendcode(8'h1B); #20 // press 'S' 
+	  kbd_sendcode(8'h1B); #20// keep pressing 'S' 
+	  kbd_sendcode(8'h1B); #20// keep pressing 'S' 
+	  kbd_sendcode(8'hF0); #20// break code 
+	  kbd_sendcode(8'h1B); #20// release 'S' 
+	  
+	  $stop;                                                  
+// --> end                                             
+//$display("Running testbench");                       
+end                                                    
+//always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+//begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+//@eachvec;                                              
+// --> end                                             
+//end                                                    
+endmodule
+

@@ -1,0 +1,290 @@
+|ep5_2
+CLOCK2_50 => ~NO_FANOUT~
+CLOCK3_50 => ~NO_FANOUT~
+CLOCK4_50 => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN1
+KEY[0] => ~NO_FANOUT~
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => SW[0].IN3
+SW[1] => SW[1].IN3
+SW[2] => SW[2].IN3
+SW[3] => SW[3].IN3
+SW[4] => SW[4].IN3
+SW[5] => SW[5].IN3
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => ~NO_FANOUT~
+LEDR[0] << <GND>
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+HEX0[0] << clock_second:clk_sec.port3
+HEX0[1] << clock_second:clk_sec.port3
+HEX0[2] << clock_second:clk_sec.port3
+HEX0[3] << clock_second:clk_sec.port3
+HEX0[4] << clock_second:clk_sec.port3
+HEX0[5] << clock_second:clk_sec.port3
+HEX0[6] << clock_second:clk_sec.port3
+HEX1[0] << clock_second:clk_sec.port4
+HEX1[1] << clock_second:clk_sec.port4
+HEX1[2] << clock_second:clk_sec.port4
+HEX1[3] << clock_second:clk_sec.port4
+HEX1[4] << clock_second:clk_sec.port4
+HEX1[5] << clock_second:clk_sec.port4
+HEX1[6] << clock_second:clk_sec.port4
+HEX2[0] << clock_minute:clk_min.port3
+HEX2[1] << clock_minute:clk_min.port3
+HEX2[2] << clock_minute:clk_min.port3
+HEX2[3] << clock_minute:clk_min.port3
+HEX2[4] << clock_minute:clk_min.port3
+HEX2[5] << clock_minute:clk_min.port3
+HEX2[6] << clock_minute:clk_min.port3
+HEX3[0] << clock_minute:clk_min.port4
+HEX3[1] << clock_minute:clk_min.port4
+HEX3[2] << clock_minute:clk_min.port4
+HEX3[3] << clock_minute:clk_min.port4
+HEX3[4] << clock_minute:clk_min.port4
+HEX3[5] << clock_minute:clk_min.port4
+HEX3[6] << clock_minute:clk_min.port4
+HEX4[0] << clock_hour:clk_h.port3
+HEX4[1] << clock_hour:clk_h.port3
+HEX4[2] << clock_hour:clk_h.port3
+HEX4[3] << clock_hour:clk_h.port3
+HEX4[4] << clock_hour:clk_h.port3
+HEX4[5] << clock_hour:clk_h.port3
+HEX4[6] << clock_hour:clk_h.port3
+HEX5[0] << clock_hour:clk_h.port4
+HEX5[1] << clock_hour:clk_h.port4
+HEX5[2] << clock_hour:clk_h.port4
+HEX5[3] << clock_hour:clk_h.port4
+HEX5[4] << clock_hour:clk_h.port4
+HEX5[5] << clock_hour:clk_h.port4
+HEX5[6] << clock_hour:clk_h.port4
+
+
+|ep5_2|clock_second:clk_sec
+clk => clk.IN1
+set => count[0].ALOAD
+set => count[1].ALOAD
+set => count[2].ALOAD
+set => count[3].ALOAD
+set => count[4].ALOAD
+set => count[5].ALOAD
+set => carry~reg0.ENA
+x[0] => count[0].ADATA
+x[1] => count[1].ADATA
+x[2] => count[2].ADATA
+x[3] => count[3].ADATA
+x[4] => count[4].ADATA
+x[5] => count[5].ADATA
+hex0[0] <= my_hex:h0.port1
+hex0[1] <= my_hex:h0.port1
+hex0[2] <= my_hex:h0.port1
+hex0[3] <= my_hex:h0.port1
+hex0[4] <= my_hex:h0.port1
+hex0[5] <= my_hex:h0.port1
+hex0[6] <= my_hex:h0.port1
+hex1[0] <= my_hex:h1.port1
+hex1[1] <= my_hex:h1.port1
+hex1[2] <= my_hex:h1.port1
+hex1[3] <= my_hex:h1.port1
+hex1[4] <= my_hex:h1.port1
+hex1[5] <= my_hex:h1.port1
+hex1[6] <= my_hex:h1.port1
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_second:clk_sec|my_clock:mclk
+clk => clk_1s~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk_1s <= clk_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_second:clk_sec|my_hex:h0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_second:clk_sec|my_hex:h1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_minute:clk_min
+second => carry~reg0.CLK
+second => count[0].CLK
+second => count[1].CLK
+second => count[2].CLK
+second => count[3].CLK
+second => count[4].CLK
+second => count[5].CLK
+set => count[0].ALOAD
+set => count[1].ALOAD
+set => count[2].ALOAD
+set => count[3].ALOAD
+set => count[4].ALOAD
+set => count[5].ALOAD
+set => carry~reg0.ENA
+x[0] => count[0].ADATA
+x[1] => count[1].ADATA
+x[2] => count[2].ADATA
+x[3] => count[3].ADATA
+x[4] => count[4].ADATA
+x[5] => count[5].ADATA
+hex0[0] <= my_hex:h0.port1
+hex0[1] <= my_hex:h0.port1
+hex0[2] <= my_hex:h0.port1
+hex0[3] <= my_hex:h0.port1
+hex0[4] <= my_hex:h0.port1
+hex0[5] <= my_hex:h0.port1
+hex0[6] <= my_hex:h0.port1
+hex1[0] <= my_hex:h1.port1
+hex1[1] <= my_hex:h1.port1
+hex1[2] <= my_hex:h1.port1
+hex1[3] <= my_hex:h1.port1
+hex1[4] <= my_hex:h1.port1
+hex1[5] <= my_hex:h1.port1
+hex1[6] <= my_hex:h1.port1
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_minute:clk_min|my_hex:h0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_minute:clk_min|my_hex:h1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_hour:clk_h
+minute => count[0].CLK
+minute => count[1].CLK
+minute => count[2].CLK
+minute => count[3].CLK
+minute => count[4].CLK
+set => count[0].ALOAD
+set => count[1].ALOAD
+set => count[2].ALOAD
+set => count[3].ALOAD
+set => count[4].ALOAD
+x[0] => count[0].ADATA
+x[1] => count[1].ADATA
+x[2] => count[2].ADATA
+x[3] => count[3].ADATA
+x[4] => count[4].ADATA
+x[5] => ~NO_FANOUT~
+hex0[0] <= my_hex:h0.port1
+hex0[1] <= my_hex:h0.port1
+hex0[2] <= my_hex:h0.port1
+hex0[3] <= my_hex:h0.port1
+hex0[4] <= my_hex:h0.port1
+hex0[5] <= my_hex:h0.port1
+hex0[6] <= my_hex:h0.port1
+hex1[0] <= my_hex:h1.port1
+hex1[1] <= my_hex:h1.port1
+hex1[2] <= my_hex:h1.port1
+hex1[3] <= my_hex:h1.port1
+hex1[4] <= my_hex:h1.port1
+hex1[5] <= my_hex:h1.port1
+hex1[6] <= my_hex:h1.port1
+
+
+|ep5_2|clock_hour:clk_h|my_hex:h0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep5_2|clock_hour:clk_h|my_hex:h1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+y[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

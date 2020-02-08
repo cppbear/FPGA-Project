@@ -1,0 +1,13 @@
+module ex8_2(clk,clrn,ps2_clk,ps2_data,data,ready,nextdata_n,overflow,count);
+	input clk,clrn,ps2_clk,ps2_data;
+	input nextdata_n;
+	output [7:0] data;
+	output reg ready;
+	output reg overflow; // fifo overflow
+ 
+	output reg [7:0] count;
+	ps2_keyboard pk(clk,cln,ps2_clk,ps2_data,data,ready,nextdata_n,overflow);
+	ps2_keyboard_model(ps2_clk,ps2_data);
+endmodule
+ 
+ 

@@ -1,0 +1,121 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep6/ep6_2/simulation/modelsim
+vep6_2
+Z1 !s110 1572859059
+!i10b 1
+!s100 cga09;3>XCRXknQI`L[2T3
+I7YSGMfCNDJ4bglgP^JZ?R0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1572859030
+8F:/FPGA Project/ep6/ep6_2/ep6_2.v
+FF:/FPGA Project/ep6/ep6_2/ep6_2.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1572859059.000000
+!s107 F:/FPGA Project/ep6/ep6_2/ep6_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep6/ep6_2|F:/FPGA Project/ep6/ep6_2/ep6_2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep6/ep6_2}
+Z7 tCvgOpt 0
+vep6_2_vlg_tst
+R1
+!i10b 1
+!s100 O_U;2AWVSQUFY^lf8kFRZ1
+IjzW7aPB3achNECi7UEYkf2
+R2
+R0
+w1572857538
+8F:/FPGA Project/ep6/ep6_2/simulation/modelsim/ep6_2.vt
+FF:/FPGA Project/ep6/ep6_2/simulation/modelsim/ep6_2.vt
+L0 28
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep6/ep6_2/simulation/modelsim/ep6_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep6/ep6_2/simulation/modelsim|F:/FPGA Project/ep6/ep6_2/simulation/modelsim/ep6_2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep6/ep6_2/simulation/modelsim}
+R7
+vLFSR
+R1
+!i10b 1
+!s100 f]T_BP7ZJ1`o<3O=2m_D;3
+IfMW`K7H]j;n?i<>LkmP`G1
+R2
+R0
+w1572859021
+8F:/FPGA Project/ep6/ep6_2/LFSR.v
+FF:/FPGA Project/ep6/ep6_2/LFSR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep6/ep6_2/LFSR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep6/ep6_2|F:/FPGA Project/ep6/ep6_2/LFSR.v|
+!i113 1
+R5
+R6
+R7
+n@l@f@s@r
+vmy_clock
+R1
+!i10b 1
+!s100 6o4W8E4:QQ;:L924h[zLT1
+I?]=U1mUPeD:<=0U_Z<JHV0
+R2
+R0
+w1572858955
+8F:/FPGA Project/ep6/ep6_2/my_clock.v
+FF:/FPGA Project/ep6/ep6_2/my_clock.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep6/ep6_2/my_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep6/ep6_2|F:/FPGA Project/ep6/ep6_2/my_clock.v|
+!i113 1
+R5
+R6
+R7
+vmy_hex
+R1
+!i10b 1
+!s100 M@=fNXT?aH5bK3]Qb8T9M0
+IaGGj@4ohO=b=5d5AmHQ0]0
+R2
+R0
+w1569158898
+8F:/FPGA Project/ep6/ep6_2/my_hex.v
+FF:/FPGA Project/ep6/ep6_2/my_hex.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep6/ep6_2/my_hex.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep6/ep6_2|F:/FPGA Project/ep6/ep6_2/my_hex.v|
+!i113 1
+R5
+R6
+R7

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clock_second.v(21): always construct contains both blocking and non-blocking assignments File: F:/FPGA Project/ep12/clock_second.v Line: 21

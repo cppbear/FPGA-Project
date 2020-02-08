@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA Project/ep1/simulation/modelsim
+vep1
+Z1 !s110 1568553329
+!i10b 1
+!s100 8UeMd1R9CEIU@ZXNZIBYA0
+I?GEB?Mc8IS6K6`nl7m1Ob3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1567876818
+8F:/FPGA Project/ep1/ep1.v
+FF:/FPGA Project/ep1/ep1.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1568553329.000000
+!s107 F:/FPGA Project/ep1/ep1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep1|F:/FPGA Project/ep1/ep1.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep1}
+Z7 tCvgOpt 0
+vep1_vlg_tst
+R1
+!i10b 1
+!s100 RBIkPO2kADob3PMSlA4l50
+Io=]V7SmmSDWnPZnWOi;Gj1
+R2
+R0
+w1568552884
+8F:/FPGA Project/ep1/simulation/modelsim/ep1.vt
+FF:/FPGA Project/ep1/simulation/modelsim/ep1.vt
+L0 28
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep1/simulation/modelsim/ep1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep1/simulation/modelsim|F:/FPGA Project/ep1/simulation/modelsim/ep1.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/FPGA Project/ep1/simulation/modelsim}
+R7
+vMUX4_1
+R1
+!i10b 1
+!s100 40FzDkXmLBS?6bOj^6eRU2
+I9V]8i2UgTMTbCb]<O16^N2
+R2
+R0
+w1567876475
+8F:/FPGA Project/ep1/MUX4_1.v
+FF:/FPGA Project/ep1/MUX4_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/FPGA Project/ep1/MUX4_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/FPGA Project/ep1|F:/FPGA Project/ep1/MUX4_1.v|
+!i113 1
+R5
+R6
+R7
+n@m@u@x4_1
